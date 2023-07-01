@@ -1,0 +1,10 @@
+def req(first_elem, second_elem):
+    if second_elem == 0:
+        return 1
+
+    return first_elem * req(first_elem, second_elem - 1)
+
+a = int(input('Введите первое число '))
+b = int(input('Укажите степень числа '))
+
+print(req(a, b))
